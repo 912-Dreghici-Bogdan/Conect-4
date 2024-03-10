@@ -264,7 +264,7 @@ while not game_over:
                     draw_board(board)
 
 
-            # # Ask for Player 2 Input
+            # Ask for Player 2 Input
     if turn == AI and not game_over:
         #col = random.randint(0, COLUMN_COUNT - 1)
         #col = pick_best_move(board, AI_PIECE)
