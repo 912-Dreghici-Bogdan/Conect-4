@@ -264,18 +264,17 @@ while not game_over:
                     draw_board(board)
 
 
-            # Ask for Player 2 Input
     if turn == AI and not game_over:
         #col = random.randint(0, COLUMN_COUNT - 1)
         #col = pick_best_move(board, AI_PIECE)
-        col, minimax_score = minimax(board, 4, -math.inf, math.inf, True)
+        col, minimax_score = minimax(board, 2, -math.inf, math.inf, True)
         if is_valid_location(board, col):
             pygame.time.delay(500)
             row = get_next_open_row(board, col)
             drop_piece(board, row, col, AI_PIECE)
 
             if winning_move(board, AI_PIECE):
-                label = myfont.render("Player 2 wins!!", 1, COLOUR2)
+                label = myfont.render("AI wins!!", 1, COLOUR2)
                 screen.blit(label, (40, 10))
                 game_over = True
 
