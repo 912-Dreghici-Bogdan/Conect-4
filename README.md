@@ -1,4 +1,4 @@
-# Connect 4 Game 🔴🟡
+# Connect 4 Game 🕹️
 
 Welcome to Connect 4 - the classic game of strategy and skill, now brought to life with Python and Pygame magic!
 
